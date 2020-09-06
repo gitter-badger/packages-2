@@ -1,0 +1,25 @@
+{
+    "name": "packages",
+    "version": "1.0.0",
+    "description": "a collection of open source and premium packages used in kodeless designer",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "build:packages": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kodeless-design/packages.git"
+    },
+    "keywords": [
+        "open source", "no code", "packages"
+    ],
+    "author": "kodeless-design",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kodeless-design/packages/issues"
+    },
+    "homepage": "https://github.com/kodeless-design/packages#readme"
+}
