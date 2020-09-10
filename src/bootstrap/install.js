@@ -11,7 +11,13 @@ const manifestObject = {
             `<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>`
         ],
         scripts: [
-            `<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha256-ecWZ3XYM7AwWIaGvSdmipJ2l1F4bN9RXW6zgpeAiZYI=" crossorigin="anonymous"></script>`
+            `<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha256-ecWZ3XYM7AwWIaGvSdmipJ2l1F4bN9RXW6zgpeAiZYI=" crossorigin="anonymous"></script>`,
+            `<script>
+                $(document).ready(function() {
+                    // Initialize Alerts
+                    $('.alert').alert();
+                });
+            </script>`
         ],
         designer: {
             elements: [
@@ -158,10 +164,10 @@ const manifestObject = {
                     id: "bootstrap-img-fluid",
                     element: {
                         label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
-                            </svg>
-                            <br/>
-                            <b>Image Fluid</b>`,
+                                    <path d="M106.2,21H90.7H7.2V21v71.4V99h6.7h13.8h1.8h63.4h20V99V27.5V21H106.2z M52.2,36.1c2.6,0,4.6,2.1,4.6,4.6s-2.1,4.6-4.6,4.6c-2.6,0-4.6-2.1-4.6-4.6S49.6,36.1,52.2,36.1z M62,82.3H45.9H29.8L45.9,59L54,70.6l14.1-20.4l22.1,32.1H62z"/>
+                                </svg>
+                                <br/>
+                                <b>Image Fluid</b>`,
                         category: "Bootstrap Images",
                         content: `<img src="https://via.placeholder.com/782x250" class="img-fluid" alt="Responsive Image">`,
                         select: true,
@@ -172,14 +178,89 @@ const manifestObject = {
                     id: "bootstrap-img-thumbnail",
                     element: {
                         label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
-                            </svg>
-                            <br/>
-                            <b>Image Thumbnail</b>`,
+                                    <path d="M106.2,21H90.7H7.2V21v71.4V99h6.7h13.8h1.8h63.4h20V99V27.5V21H106.2z M52.2,36.1c2.6,0,4.6,2.1,4.6,4.6s-2.1,4.6-4.6,4.6c-2.6,0-4.6-2.1-4.6-4.6S49.6,36.1,52.2,36.1z M62,82.3H45.9H29.8L45.9,59L54,70.6l14.1-20.4l22.1,32.1H62z"/>
+                                </svg>
+                                <br/>
+                                <b>Image Thumbnail</b>`,
                         category: "Bootstrap Images",
                         content: `<img src="https://via.placeholder.com/250x250" class="img-thumbnail" alt="Responsive Image">`,
                         select: true,
                         activate: true,
+                    }
+                },
+                {
+                    id: "bootstrap-figure",
+                    element: {
+                        label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M106.2,21H90.7H7.2V21v71.4V99h6.7h13.8h1.8h63.4h20V99V27.5V21H106.2z M52.2,36.1c2.6,0,4.6,2.1,4.6,4.6s-2.1,4.6-4.6,4.6c-2.6,0-4.6-2.1-4.6-4.6S49.6,36.1,52.2,36.1z M62,82.3H45.9H29.8L45.9,59L54,70.6l14.1-20.4l22.1,32.1H62z"/>
+                                </svg>
+                                <br/>
+                                <b>Bootstrap Figure</b>`,
+                        category: "Bootstrap Figure",
+                        content: `<figure class="figure">
+                                    <img src="https://via.placeholder.com/400x300" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                                </figure>`,
+                        select: true,
+                        activate: true,
+                    }
+                },
+                // Bootstrap Components
+                {
+                    id: "bootstrap-alert",
+                    element: {
+                        label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
+                            </svg>
+                            <br/>
+                            <b>Alert</b>`,
+                        category: "Bootstrap Components",
+                        content: `<div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>`,
+                        select: true
+                    }
+                },
+                {
+                    id: "bootstrap-alert-link",
+                    element: {
+                        label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
+                            </svg>
+                            <br/>
+                            <b>Alert Link</b>`,
+                        category: "Bootstrap Components",
+                        content: `<a href="#" class="alert-link">an example link</a>`,
+                        select: true
+                    }
+                },
+                {
+                    id: "bootstrap-alert-heading",
+                    element: {
+                        label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
+                            </svg>
+                            <br/>
+                            <b>Alert Heading</b>`,
+                        category: "Bootstrap Components",
+                        content: `<h4 class="alert-heading">Well done!</h4>`,
+                        select: true
+                    }
+                },
+                {
+                    id: "bootstrap-alert-dismissable",
+                    element: {
+                        label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
+                            </svg>
+                            <br/>
+                            <b>Dismissable Alert</b>`,
+                        category: "Bootstrap Components",
+                        content: `<div class="alert alert-primary" role="alert">
+                                        A simple primary alert—check it out!
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>`,
+                        select: true
                     }
                 }
             ]
