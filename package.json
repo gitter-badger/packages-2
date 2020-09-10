@@ -14,7 +14,9 @@
         "url": "git+https://github.com/kodeless-design/packages.git"
     },
     "keywords": [
-        "open source", "no code", "packages"
+        "open source",
+        "no code",
+        "packages"
     ],
     "author": "kodeless-design",
     "license": "ISC",
