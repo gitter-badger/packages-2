@@ -20,10 +20,10 @@ const manifestObject = {
                     id: "bootstrap-container",
                     element: {
                         label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
-                            </svg>
-                            <br/>
-                            <b>Container</b>`,
+                                    <path d="M106.2,20.9H90.7H63.5h-0.1h-6.9H31.7h-0.3H12H7.2V21v17.5v0.1v6.9v46.8V99H12h1h0.9h13.8h1.8h2.2h24.9h0.3h6.7h26.2v0.1h0.9h17.4V99h4.8v-0.1V27.6v-6.7H106.2z M56.5,92H31.7v-9.4V62.5v-0.1v-5.1V27.9h24.9h7h26.4v29.5v5.2v20.1V92H63.5H56.5z"/>
+                                </svg>
+                                <br/>
+                                <b>Container</b>`,
                         category: "Bootstrap Layouts",
                         content: `<div class="container"></div>`,
                         select: true
@@ -33,10 +33,10 @@ const manifestObject = {
                     id: "bootstrap-row",
                     element: {
                         label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
-                            </svg>
-                            <br/>
-                            <b>Row</b>`,
+                                    <path d="M112.9,25.6v-4.7h-6.7H90.7H63.5h-0.1h-6.9H7.2V21v17.5v0.1v6.9v46.8V99h6.7h13.8h1.8h27h0.3h6.7h29.4h20v-0.1V44h0v-0.3L112.9,25.6L112.9,25.6z M105.9,45.5v30.8h-0.7v0.1H63.5h-6.9H29.9h-15v-0.1h-0.7V45.5V44h1.3h15.3h26.7h0.1h6.8h41.6V45.5z"/>
+                                </svg>
+                                <br/>
+                                <b>Row</b>`,
                         category: "Bootstrap Layouts",
                         content: `<div class="row"></div>`,
                         select: true
@@ -46,10 +46,10 @@ const manifestObject = {
                     id: "bootstrap-column",
                     element: {
                         label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
-                            </svg>
-                            <br/>
-                            <b>Column</b>`,
+                                    <path d="M106.2,20.9H90.7H63.5h-0.1h-6.9H31.7h-0.3H12H7.2V21v17.5v0.1v6.9v46.8V99H12h1h0.9h13.8h1.8h2.2h24.9h0.3h6.7h26.2v0.1h0.9h17.4V99h4.8v-0.1V27.6v-6.7H106.2z M63.5,92h-7h-16V27.9h16.1h7h17.5V92H63.5z"/>
+                                </svg>
+                                <br/>
+                                <b>Column</b>`,
                         category: "Bootstrap Layouts",
                         content: `<div class="col"></div>`,
                         select: true
@@ -59,10 +59,10 @@ const manifestObject = {
                     id: "bootstrap-media",
                     element: {
                         label: `<svg class="gi gi-box-fill fs-xs" width="3rem" height="3rem" viewBox="0 0 120 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="106,21 90.5,21 7,21 7,21.1 7,92.5 7,99.1 13.7,99.1 27.5,99.1 29.3,99.1 92.7,99.1 112.7,99.1 112.7,99 112.7,27.6 112.7,21"/>
-                            </svg>
-                            <br/>
-                            <b>Media</b>`,
+                                    <path d="M106.2,21H90.7H7.2V21v71.4V99h6.7h13.8h1.8h63.4h20V99V27.5V21H106.2z M52.2,36.1c2.6,0,4.6,2.1,4.6,4.6s-2.1,4.6-4.6,4.6c-2.6,0-4.6-2.1-4.6-4.6S49.6,36.1,52.2,36.1z M62,82.3H45.9H29.8L45.9,59L54,70.6l14.1-20.4l22.1,32.1H62z"/>
+                                </svg>
+                                <br/>
+                                <b>Media</b>`,
                         category: "Bootstrap Layouts",
                         content: `<div class="media">
                                 <img class="mr-3" src="https://via.placeholder.com/64x64" alt="Generic Placeholder Image">
