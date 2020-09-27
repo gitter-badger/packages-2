@@ -13,4 +13,10 @@ const manifestObject = {
     }]
 }
 
+for (index = 0; index < manifestObject.versions.length; ++index) {
+    if (manifestObject.versions[index].plugin) {
+        manifestObject.versions[index].plugin = manifestObject.versions[index].plugin.toString();
+    }
+}
+
 writeFileSync(`manifest.json`, JSON.stringify(manifestObject));
